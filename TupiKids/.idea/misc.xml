@@ -3,14 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/drawable/ic_toastaviso_icon.xml" value="0.27870370370370373" />
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/drawable/ic_toasterro_icon.xml" value="0.27870370370370373" />
         <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/drawable/imgteste_seletor.xml" value="0.2890625" />
         <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/drawable/imgteste_seletorimgbutton.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/layout/activity_introducao1_fase1.xml" value="0.5" />
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/drawable/quadrado_teste.xml" value="0.2890625" />
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/drawable/toastaviso_background.xml" value="0.2890625" />
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/drawable/toasterro_background.xml" value="0.27870370370370373" />
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/drawable/toastinfocreditos_background.xml" value="0.27870370370370373" />
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/drawable/toasttutorialcaptcha_background.xml" value="0.27870370370370373" />
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/layout/aaa.xml" value="0.2296195652173913" />
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/layout/activity_introducao1_fase1.xml" value="0.33" />
         <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/layout/activity_introducao2_fase1.xml" value="0.20697463768115942" />
         <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/layout/activity_introducao_fase1.xml" value="0.25" />
-        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/layout/activity_primeira_fase.xml" value="0.33" />
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/layout/activity_primeira_fase.xml" value="0.5" />
         <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/layout/fase1.xml" value="0.223731884057971" />
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/layout/toast_aviso.xml" value="0.33" />
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/layout/toast_erro.xml" value="0.33" />
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/layout/toast_infocreditos.xml" value="0.33" />
+        <entry key="..\:/Users/vfmad/AndroidStudioProjects/TupiKids/app/src/main/res/layout/toast_tutorialcaptcha.xml" value="0.2259963768115942" />
       </map>
     </option>
   </component>

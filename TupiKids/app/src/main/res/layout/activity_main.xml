@@ -8,25 +8,29 @@
 
     <Button
         android:id="@+id/botaoJogar"
-        android:layout_width="wrap_content"
+        android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="284dp"
-        android:backgroundTint="#D03F705E"
+        android:layout_marginTop="280dp"
+        android:height="75dp"
+        android:backgroundTint="#FF9800"
+        android:fontFamily="@font/galindo"
         android:gravity="center"
         android:onClick="jogar"
         android:text="Jogar"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/botaoInfo"
-        android:layout_width="56dp"
-        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:onClick="mostrarCreditos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/_8593"
+        app:srcCompat="@drawable/_2x32"
         tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
