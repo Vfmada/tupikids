@@ -2,10 +2,12 @@ package com.example.tupikids;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,11 +19,18 @@ public class MainActivity extends AppCompatActivity {
     }
     
     public void mostrarCreditos(View view){
-        Toast.makeText(this, "Desenvolvido por:\n\nVinícius F. Madalena,\nLuiz Rosar,\nGabrielle Garcia,\nYuri Adami,\nIsadora Dutra,\nMatheus Lopes.", Toast.LENGTH_LONG).show();
+        LayoutInflater inflaterInfo = getLayoutInflater();
+        View layoutInfo = inflaterInfo.inflate(R.layout.toast_infocreditos, (ViewGroup) findViewById(R.id.toast_infocreditos));
+        final Toast toastInfo = new Toast(getApplicationContext());
+        toastInfo.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+        toastInfo.setDuration(Toast.LENGTH_LONG);
+        toastInfo.setView(layoutInfo);
+
+        toastInfo.show();
     }
 
     public void jogar(View view){
-        Intent i = new Intent(this, PrimeiraFase.class);
+        Intent i = new Intent(this, introducao1_fase1.class);
         startActivity(i);
     }
 }
