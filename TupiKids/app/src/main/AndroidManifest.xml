@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/teste_botoescaptcha1"
+        android:icon="@mipmap/ic_tupikids"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/teste_botoescaptcha1"
+        android:roundIcon="@mipmap/ic_tupikids"
         android:supportsRtl="true"
         android:theme="@style/Theme.TupiKids">
         <activity
@@ -19,9 +19,6 @@
             android:name=".TerceiraFase"
             android:exported="true" />
         <activity
-            android:name=".introducao2_fase3"
-            android:exported="true" />
-        <activity
             android:name=".introducao1_fase3"
             android:exported="true" />
         <activity
@@ -29,9 +26,6 @@
             android:exported="true" />
         <activity
             android:name=".SegundaFase"
-            android:exported="true" />
-        <activity
-            android:name=".introducao2_fase2"
             android:exported="true" />
         <activity
             android:name=".introducao1_fase2"
@@ -55,10 +49,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

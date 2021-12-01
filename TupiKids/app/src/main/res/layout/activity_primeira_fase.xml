@@ -11,13 +11,13 @@
         android:id="@+id/img1"
         android:layout_width="128dp"
         android:layout_height="128dp"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/imgteste_seletor"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/captcha1_img1_seletor"
         android:textOff=""
         android:textOn=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo2"
+        app:layout_constraintTop_toBottomOf="@+id/titulo2_sombra"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ToggleButton
@@ -25,8 +25,8 @@
         android:layout_width="128dp"
         android:layout_height="128dp"
         android:layout_marginStart="30dp"
-        android:layout_marginBottom="25dp"
-        android:background="@drawable/imgteste_seletor"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/captcha1_img2_seletor"
         android:textOff=""
         android:textOn=""
         app:layout_constraintBottom_toTopOf="@+id/botaoContinuar"
@@ -34,12 +34,12 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <ToggleButton
-        android:id="@+id/img3"
+        android:id="@+id/img4"
         android:layout_width="128dp"
         android:layout_height="128dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="25dp"
-        android:background="@drawable/imgteste_seletor"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/captcha1_img3_seletor"
         android:textOff=""
         android:textOn=""
         app:layout_constraintBottom_toTopOf="@+id/botaoContinuar"
@@ -47,25 +47,24 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/titulo2"
+        android:id="@+id/titulo1_sombra"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="30dp"
         android:fontFamily="@font/galindo"
         android:gravity="center"
         android:singleLine="false"
-        android:text="Selecione somente as imagens que têm poluição!"
+        android:text="Ajude Bob, o boto!"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/titulo1"
+        app:layout_constraintEnd_toEndOf="@+id/titulo1"
+        app:layout_constraintStart_toStartOf="@+id/titulo1"
+        app:layout_constraintTop_toTopOf="@+id/titulo1" />
 
     <TextView
-        android:id="@+id/titulo"
+        android:id="@+id/titulo1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -74,12 +73,47 @@
         android:fontFamily="@font/galindo"
         android:gravity="center"
         android:singleLine="false"
-        android:text="Selecione somente as imagens que têm poluição!"
+        android:text="Ajude Bob, o boto!"
         android:textColor="#FF9800"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titulo2_sombra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/galindo"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="Selecione as imagens que têm poluição!"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/titulo2"
+        app:layout_constraintEnd_toEndOf="@+id/titulo2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titulo2"
+        app:layout_constraintTop_toTopOf="@+id/titulo2" />
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/galindo"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="Selecione as imagens que têm poluição!"
+        android:textColor="#FF9800"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo1_sombra" />
 
     <Button
         android:id="@+id/botaoContinuar"
@@ -109,16 +143,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/icone_tutorial30px"
         tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="*Marca a de cima*"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/img1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

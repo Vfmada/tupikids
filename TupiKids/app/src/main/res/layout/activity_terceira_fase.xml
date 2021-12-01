@@ -4,6 +4,222 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fffaa0"
     tools:context=".TerceiraFase">
+
+    <ToggleButton
+        android:id="@+id/img1"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/captcha3_img1_seletor"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo2_sombra"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ToggleButton
+        android:id="@+id/img2"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/captcha3_img2_seletor"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintEnd_toStartOf="@+id/img3"
+        app:layout_constraintStart_toEndOf="@+id/img1"
+        app:layout_constraintTop_toBottomOf="@+id/titulo2_sombra"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ToggleButton
+        android:id="@+id/img4"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="18dp"
+        android:background="@drawable/captcha3_img4_seletor"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toTopOf="@+id/img7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ToggleButton
+        android:id="@+id/img5"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="@drawable/captcha3_img5_seletor"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toTopOf="@+id/img7"
+        app:layout_constraintEnd_toStartOf="@+id/img6"
+        app:layout_constraintStart_toEndOf="@+id/img4"
+        app:layout_constraintTop_toBottomOf="@+id/img1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ToggleButton
+        android:id="@+id/img6"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/captcha3_img6_seletor"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toTopOf="@+id/img7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ToggleButton
+        android:id="@+id/img7"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/captcha3_img7_seletor"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toTopOf="@+id/botaoContinuar"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ToggleButton
+        android:id="@+id/img8"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/captcha3_img8_seletor"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toTopOf="@+id/botaoContinuar"
+        app:layout_constraintEnd_toStartOf="@+id/img9"
+        app:layout_constraintStart_toEndOf="@+id/img7"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ToggleButton
+        android:id="@+id/img9"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/captcha3_img9_seletor"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toTopOf="@+id/botaoContinuar"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ToggleButton
+        android:id="@+id/img3"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/captcha3_img3_seletor"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/titulo1_sombra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/galindo"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="Ajude Valéria, a onça!"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/titulo1"
+        app:layout_constraintEnd_toEndOf="@+id/titulo1"
+        app:layout_constraintStart_toStartOf="@+id/titulo1"
+        app:layout_constraintTop_toTopOf="@+id/titulo1" />
+
+    <TextView
+        android:id="@+id/titulo1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/galindo"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="Ajude Valéria, a onça!"
+        android:textColor="#FF9800"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titulo2_sombra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/galindo"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="Selecione as imagens que têm poluição!"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/titulo2"
+        app:layout_constraintEnd_toEndOf="@+id/titulo2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titulo2"
+        app:layout_constraintTop_toTopOf="@+id/titulo2" />
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/galindo"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="Selecione as imagens que têm poluição!"
+        android:textColor="#FF9800"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo1_sombra" />
+
+    <Button
+        android:id="@+id/botaoContinuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="138dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#FF9800"
+        android:fontFamily="@font/galindo"
+        android:onClick="continua"
+        android:text="CONTINUAR"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/botaoAjuda"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="mostraTutorial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icone_tutorial30px"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

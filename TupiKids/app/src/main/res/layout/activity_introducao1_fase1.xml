@@ -4,52 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/para_a_alegria_dos_pequenos_e_dos_grandes___1_"
     tools:context=".introducao1_fase1">
 
     <ImageView
-        android:id="@+id/boneco_palito"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginEnd="-100dp"
-        android:layout_marginBottom="130dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/tupi"
+        android:layout_width="218dp"
+        android:layout_height="239dp"
+        android:layout_marginTop="-55dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/boneco_exemplo" />
+        app:layout_constraintTop_toBottomOf="@+id/balao_fala1"
+        app:srcCompat="@drawable/tupi" />
 
     <ImageView
-        android:id="@+id/balao_fala"
-        android:layout_width="260dp"
-        android:layout_height="260dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginBottom="290dp"
+        android:id="@+id/balao_fala1"
+        android:layout_width="203dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="325dp"
+        android:rotationY="180"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/balaofala" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pinclipart_com_right_clipart_16746" />
 
     <TextView
-        android:id="@+id/fala"
-        android:layout_width="170dp"
+        android:id="@+id/fala1"
+        android:layout_width="175dp"
         android:layout_height="140dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="65dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/galindo"
         android:gravity="center"
-        android:text="Bem vindo ao TupiKids, eu sou o Tupi, vamos ingressar nessa aventura pela Floresta Amazônica juntos! "
+        android:text="Bem vindo ao TupiKids, eu sou o Tupi e meus amigos precisam de ajuda!"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/balao_fala"
-        app:layout_constraintEnd_toEndOf="@id/balao_fala"
-        app:layout_constraintStart_toStartOf="@id/balao_fala" />
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/balao_fala1"
+        app:layout_constraintStart_toStartOf="@id/balao_fala1"
+        app:layout_constraintTop_toTopOf="@+id/balao_fala1" />
 
     <Button
         android:id="@+id/botao_tela"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
         android:onClick="passaDialogo"
         android:visibility="visible"
         app:iconTint="@android:color/transparent"

@@ -4,6 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/design_sem_nome"
     tools:context=".agradecimento_fase1">
+
+    <ImageView
+        android:id="@+id/tupi"
+        android:layout_width="192dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="-35dp"
+        android:rotationY="0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balao_fala2"
+        app:srcCompat="@drawable/tupi" />
+
+    <ImageView
+        android:id="@+id/boto"
+        android:layout_width="186dp"
+        android:layout_height="212dp"
+        android:layout_marginStart="10dp"
+        android:rotation="-15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balao_fala1"
+        app:srcCompat="@drawable/boto" />
+
+    <ImageView
+        android:id="@+id/balao_fala1"
+        android:layout_width="203dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="195dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pinclipart_com_right_clipart_16746" />
+
+    <ImageView
+        android:id="@+id/balao_fala2"
+        android:layout_width="203dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:rotationY="180"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pinclipart_com_right_clipart_16746" />
+
+    <TextView
+        android:id="@+id/fala1"
+        android:layout_width="175dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/galindo"
+        android:gravity="center"
+        android:text="Obrigado mesmo!"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/balao_fala1"
+        app:layout_constraintStart_toStartOf="@id/balao_fala1"
+        app:layout_constraintTop_toTopOf="@+id/balao_fala1" />
+
+    <TextView
+        android:id="@+id/fala2"
+        android:layout_width="175dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/galindo"
+        android:gravity="center"
+        android:text="Ótimo!"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/balao_fala2"
+        app:layout_constraintStart_toStartOf="@id/balao_fala2"
+        app:layout_constraintTop_toTopOf="@+id/balao_fala2" />
+
+    <Button
+        android:id="@+id/botao_tela"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="passaDialogo"
+        android:visibility="visible"
+        app:iconTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

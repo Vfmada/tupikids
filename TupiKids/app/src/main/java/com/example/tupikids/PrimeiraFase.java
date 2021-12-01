@@ -2,7 +2,6 @@ package com.example.tupikids;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -21,10 +20,24 @@ public class PrimeiraFase extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_primeira_fase);
-
         img1 = findViewById(R.id.img1);
         img2 = findViewById(R.id.img2);
-        img3 = findViewById(R.id.img3);
+        img3 = findViewById(R.id.img4);
+
+        hideNavigationBar();
+    }
+
+    public void hideNavigationBar(){
+        this.getWindow().getDecorView()
+                .setSystemUiVisibility(
+                        View.SYSTEM_UI_FLAG_FULLSCREEN |
+                                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                                View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY |
+                                View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
+                                View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
+                                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+
+                );
     }
 
     public int verificaCaptcha(){
@@ -58,11 +71,15 @@ public class PrimeiraFase extends AppCompatActivity {
             case 0:
                 Intent i = new Intent(this, agradecimento_fase1.class);
                 startActivity(i);
+                finish();
                 break;
             case 1:
                 toastAviso.show();
                 break;
             case 2:
+                img1.setChecked(false);
+                img2.setChecked(false);
+                img3.setChecked(false);
                 toastErro.show();
                 break;
             default:

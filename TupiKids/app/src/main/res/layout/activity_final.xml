@@ -4,6 +4,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/para_a_alegria_dos_pequenos_e_dos_grandes___1_"
     tools:context=".Final">
+
+    <ImageView
+        android:id="@+id/tupi"
+        android:layout_width="218dp"
+        android:layout_height="239dp"
+        android:layout_marginTop="-35dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balao_fala1"
+        app:srcCompat="@drawable/tupi" />
+
+    <ImageView
+        android:id="@+id/balao_fala1"
+        android:layout_width="203dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="325dp"
+        android:rotationY="180"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pinclipart_com_right_clipart_16746" />
+
+    <TextView
+        android:id="@+id/fala1"
+        android:layout_width="175dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/galindo"
+        android:gravity="center"
+        android:text="Essa aventura foi incrível! Juntos conseguimos combater a poluição em todos esses lugares"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/balao_fala1"
+        app:layout_constraintStart_toStartOf="@id/balao_fala1"
+        app:layout_constraintTop_toTopOf="@+id/balao_fala1" />
+
+    <TextView
+        android:id="@+id/fim_contorno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:fontFamily="@font/galindo"
+        android:gravity="center"
+        android:text="FIM"
+        android:textColor="@color/black"
+        android:textSize="89sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/obrigado_contorno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/galindo"
+        android:gravity="center"
+        android:text="Muito obrigado por jogar!"
+        android:textColor="@color/black"
+        android:textSize="36.5sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fim_contorno" />
+
+    <TextView
+        android:id="@+id/fim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:fontFamily="@font/galindo"
+        android:gravity="center"
+        android:text="FIM"
+        android:textColor="#FF9800"
+        android:textSize="86sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/obrigado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/galindo"
+        android:gravity="center"
+        android:text="Muito obrigado por jogar!"
+        android:textColor="#FF9800"
+        android:textSize="36sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fim_contorno" />
+
+    <Button
+        android:id="@+id/botao_tela"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="passaDialogo"
+        android:visibility="visible"
+        app:iconTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
